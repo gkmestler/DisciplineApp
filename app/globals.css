@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: "Big Shoulders Display", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+}
+
+html,
+body {
+  background: #050505;
+  color: #f5f5f5;
+  -webkit-font-smoothing: antialiased;
+  font-family: var(--font-body);
+  letter-spacing: -0.01em;
+}
+
+button {
+  font-family: var(--font-body);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Hide scrollbars on horizontal pill rows */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Buttons that feel tactile on mobile */
+.tap {
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  touch-action: manipulation;
+}
+
+/* Soft inset glow for cards */
+.card {
+  background: #0c0c0c;
+  border: 1px solid #1a1a1a;
+  border-radius: 14px;
+}
+
+.card-soft {
+  background: #0f0f0f;
+  border: 1px solid #1c1c1c;
+  border-radius: 14px;
+}
